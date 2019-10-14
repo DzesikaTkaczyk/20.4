@@ -11,13 +11,13 @@ class App extends React.Component {
         };//keeps state and describe whats this doing
     }
     
-    addTodo(val){
+    addTodo(val) {
         const todo = {
             text: val,
             id: uuid.v4(),//gives unique id
         };
         const data = [...this.state.data, todo];//brings up array and adds todo elements
-        this.setState = ({data});
+        this.setState({data});
     }
 
     removeTodo(id) {
