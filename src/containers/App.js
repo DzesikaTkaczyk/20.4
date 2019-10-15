@@ -8,19 +8,20 @@ class App extends React.Component {
         super(props);
         this.state = {
             data: []
-        };//utrzymanie stanu aplikacji i opisanie, co robi
+        };//keeps state and describe whats this doing
     }
-    addTodo(val){
+    
+    addTodo(val) {
         const todo = {
             text: val,
-            id: uuid.v4(),//nadaje unikatowe id
+            id: uuid.v4(),//gives unique id
         };
-        const data = [...this.state.data, todo];//przywoluje tablice i dodaje do niej elementy todo
-        this.setState = ({data});//tworzy obiekt z danymi
+        const data = [...this.state.data, todo];//brings up array and adds todo elements
+        this.setState({data});
     }
 
     removeTodo(id) {
-        const remainder = this.state.data.filter(todo => todo.id !== id);//filter tworzy tablice i sprawdza czy id usuwanego elementu jest rozne od id obecnie sprawdzanego
+        const remainder = this.state.data.filter(todo => todo.id !== id);//filter creates array and checks: if id of removed element is different than id of active element
         this.setState({data: remainder});
     }
 
