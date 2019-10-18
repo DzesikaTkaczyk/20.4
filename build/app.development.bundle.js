@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"ul {\\r\\n    width: 400px;\\r\\n    position: relative;\\r\\n}\\r\\n\\r\\n._10Hj2L-iA341CMV0p4kKky {\\r\\n    position: absolute;\\r\\n    display: inline-block;\\r\\n}  \\r\\n\\r\\n._3ZBYY00LNyXCTYPzkifnLJ {\\r\\n    position: absolute;\\r\\n    top: 0px;\\r\\n    right: 0px;\\r\\n}\", \"\"]);\n// Exports\nexports.locals = {\n\t\"tasks\": \"_10Hj2L-iA341CMV0p4kKky\",\n\t\"close\": \"_3ZBYY00LNyXCTYPzkifnLJ\"\n};\n\n//# sourceURL=webpack:///./src/components/TodoList.css?./node_modules/css-loader/dist/cjs.js??ref--5-1");
+eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"ul {\\r\\n    width: 400px;\\r\\n}\\r\\n\\r\\nli {\\r\\n\\tposition: relative;\\r\\n}\\r\\n\\r\\np {\\r\\n    display: inline-block;\\r\\n}  \\r\\n\\r\\nbutton {\\r\\n    position: absolute;\\r\\n    top: 16px;\\r\\n    right: 0px;\\r\\n}\", \"\"]);\n\n\n//# sourceURL=webpack:///./src/components/TodoList.css?./node_modules/css-loader/dist/cjs.js??ref--5-1");
 
 /***/ }),
 

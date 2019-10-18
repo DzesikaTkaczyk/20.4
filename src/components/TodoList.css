@@ -1,15 +1,17 @@
 ul {
     width: 400px;
-    position: relative;
 }
 
-.tasks {
-    position: absolute;
+li {
+	position: relative;
+}
+
+p {
     display: inline-block;
 }  
 
-.close {
+button {
     position: absolute;
-    top: 0px;
+    top: 16px;
     right: 0px;
 }
