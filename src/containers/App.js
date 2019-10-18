@@ -2,12 +2,22 @@ import React from 'react';
 import uuid from 'uuid'
 import style from './App.css';
 import Title from '../components/Title';
+import TodoList from '../components/TodoList';
 
 class App extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            data: []
+            data: [{
+                id: 1,
+                text: 'clean room'
+                }, {
+                id: 2,
+                text: 'wash the dishes'
+                }, {
+                id: 3,
+                text: 'feed my cat'
+            }]
         };//keeps state and describe whats this doing
     }
     
@@ -26,9 +36,12 @@ class App extends React.Component {
     }
 
     render() {
+        const allTasks = this.state.data.map((task) => <li key={task.id} onClick={() => this.removeTodo(task.id)}><p className='tasks'>{task.text}</p><button className='close'>x</button></li>)
+
         return (
             <div className={style.TodoApp}>
                 <Title tasks={this.state.data.length}/>
+                <TodoList tasksList={allTasks}/>
             </div>
         );
     }
