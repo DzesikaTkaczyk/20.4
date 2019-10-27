@@ -30,7 +30,7 @@ class App extends React.Component {
         this.setState({data});
     }
 
-    removeTodo(id) {
+    removeTodo = id => {
         const remainder = this.state.data.filter(todo => todo.id !== id);//filter creates array and checks: if id of removed element is different than id of active element
         this.setState({data: remainder});
     }
