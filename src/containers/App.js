@@ -36,12 +36,12 @@ class App extends React.Component {
     }
 
     render() {
-        const allTasks = this.state.data.map((task) => <li key={task.id} onClick={() => this.removeTodo(task.id)}><p className='tasks'>{task.text}</p><button className='close'>x</button></li>)
+        const { list } = this.state.data;
 
         return (
             <div className={style.TodoApp}>
                 <Title tasks={this.state.data.length}/>
-                <TodoList tasksList={allTasks}/>
+                <TodoList tasksList={this.state.data} removeTodo={this.removeTodo} />
             </div>
         );
     }

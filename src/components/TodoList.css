@@ -1,16 +1,16 @@
-ul {
+.tasksList {
     width: 400px;
 }
 
-li {
+.oneTask {
 	position: relative;
 }
 
-p {
+.taskText {
     display: inline-block;
 }  
 
-button {
+.close {
     position: absolute;
     top: 16px;
     right: 0px;
